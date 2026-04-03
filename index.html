@@ -169,30 +169,43 @@
         <p>Email: demo@agentforce.com</p>
     </div>
     <footer>
-        © 2026 Agentforce UI Demo By Ankit Sirohi
+        © 2026 Agentforce UI Demo By Ankit Sirohi. All rights reserved.
     </footer>
     <script type='text/javascript'>
-        function initEmbeddedMessaging() {
-            try {
-                embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
 
-                embeddedservice_bootstrap.init(
-                    '00DdM00000sPH6b',
-                    'Github_Messaging_Setting',
-                    'https://orgfarm-4683fd71b8-dev-ed.develop.my.site.com/ESWGithubMessagingSetti1775196743684',
-                    {
-                        scrt2URL: 'https://orgfarm-4683fd71b8-dev-ed.develop.my.salesforce-scrt.com'
-                    }
-                );
-            } catch (err) {
-                console.error('Error loading Embedded Messaging: ', err);
-            }
-        };
-    </script>
-    <script type='text/javascript'
-        src='https://orgfarm-4683fd71b8-dev-ed.develop.my.site.com/ESWGithubMessagingSetti1775196743684/assets/js/bootstrap.min.js%27 onload='
-        initEmbeddedMessaging()'>
-    </script>
+	function initEmbeddedMessaging() {
+
+		try {
+
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+ 
+			embeddedservice_bootstrap.init(
+
+				'00DdM00000sPH6b',
+
+				'Inbound_Lead_Generation',
+
+				'https://orgfarm-4683fd71b8-dev-ed.develop.my.site.com/ESWInboundLeadGeneratio1775199359644',
+
+				{
+
+					scrt2URL: 'https://orgfarm-4683fd71b8-dev-ed.develop.my.salesforce-scrt.com'
+
+				}
+
+			);
+
+		} catch (err) {
+
+			console.error('Error loading Embedded Messaging: ', err);
+
+		}
+
+	};
+</script>
+<script type='text/javascript' src='https://orgfarm-4683fd71b8-dev-ed.develop.my.site.com/ESWInboundLeadGeneratio1775199359644/assets/js/bootstrap.min.js%27 onload='initEmbeddedMessaging()'></script>
+
+ 
 </body>
 
 </html>
